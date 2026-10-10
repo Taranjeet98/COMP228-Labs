@@ -8,8 +8,12 @@ public class Doctor extends Person{
         this.consultationFee = consultationFee;
     }
 
+    public double getConsultationFee() {
+        return consultationFee;
+    }
+
     public void diagnosePatient() {
-        System.out.println(getName() + " is diagnosing a patient in " + specialization + ".");
+        System.out.println(getName() + " is diagnosing a patient in " + specialization + " with a consultation fee of $" + consultationFee + ".");
     }
 
     @Override
